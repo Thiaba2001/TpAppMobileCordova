@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCUL IMC</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <section class="container">
+        <div>
+            <h1>
+                CALCUL DE L'IMC
+            </h1>
+            <div class="grid">
+                <div>
+                    <h4>IMC</h4>
+                    <p>plus petit que 18.5</p>
+                    <p>Entre 18.5 et 24.9</p>
+                    <p>Entre 25 et 29.9</p>
+                    <p>Entre 30 et 34.9</p>
+                    <p>Entre 35 et 39.9</p>
+                    <p>plus grand que 40</p>
+                </div>
+                <div>
+                    <h4>Résultat</h4>
+                    <p>Insuffisance pondérale</p>
+                    <p>Poids normal</p>
+                    <p>Surpoids</p>
+                    <p>Obésité de grade 1</p>
+                    <p>Obésité de grade 2</p>
+                    <p>Obésité de grade 3</p>
+                </div>
+            </div>
+            <form action="#" class="form">
+                <label for="weight">Poids avec des décimales séparées par un point.</label>
+                <input type="text" name="#weight" id="weight" placeholder="0.00">
+                <label for="height">Hauteur en mètres, séparée par un point.</label>
+                <input type="text" name="height" id="height" placeholder="0.00">
+                <button type="submit">Calculer</button>
+            </form>
+            <div class="resultat">
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

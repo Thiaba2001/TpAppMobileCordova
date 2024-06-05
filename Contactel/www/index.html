@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contacts App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- Page principale -->
+    <div data-role="page" id="mainPage">
+        <div data-role="header">
+            <h1>Contacts</h1>
+        </div>
+        <div data-role="content">
+            <ul id="contactList" data-role="listview">
+                <!-- Contacts list will be populated here -->
+                <li>
+                    <a href="#">
+                        <img src="img/Black.jpg" alt="photo de profil du contact">
+                        <h1>Thiaba Fall</h1>
+                        <p>77 038 56 14</p>
+                    </a>
+                <li>
+                    <a href="#">
+                        <img src="img/avatar.jpg" alt="photo de profil du contact">
+                        <h1>Fatim Kasse</h1>
+                        <p>77 9707221</p>
+                    </a>
+                <li>
+                    <a href="#">
+                        <img src="img/Black.jpg" alt="photo de profil du contact">
+                        <h1>kya </h1>
+                        <p>77 444 56 23</p>
+                    </a>
+                </li>
+
+            </ul>
+            <button id="addContactButton">Ajouter un Contact</button>
+        </div>
+    </div>
+
+    <!-- Page pour ajouter un contact -->
+    <div data-role="page" id="addContactPage">
+        <div data-role="header">
+            <h1>Ajouter un Contact</h1>
+        </div>
+        <div data-role="content">
+            <form id="addContactForm">
+                <label for="contactName">Nom:</label>
+                <input type="text" id="contactName" name="contactName">
+                <label for="contactFirstName">Prénom:</label>
+                <input type="text" id="contactFirstName" name="contactFirstName">
+                <label for="contactMobileNumber">Numéro de portable:</label>
+                <input type="text" id="contactMobileNumber" name="contactMobileNumber">
+                <label for="contactPhoneNumber">Numéro fixe:</label>
+                <input type="text" id="contactPhoneNumber" name="contactPhoneNumber">
+                <label for="contactEmail">Email:</label>
+                <input type="text" id="contactEmail" name="contactEmail">
+                <button type="button" id="saveContactButton">Enregistrer</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
