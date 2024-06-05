@@ -1,0 +1,12 @@
+label,
+h3 {
+    text-align: center;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.header {
+    border-radius: 10px;
+}
